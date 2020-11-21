@@ -1282,8 +1282,8 @@ body > div[am-wrapper] {
 }
 body > div[am-wrapper] > header,
 body > div[am-wrapper] > footer {
-  background-color: #37474f;
-  color: #ffb8a2;
+  background-color: #04474c;
+  color: #f96413;
 }
 body > div[am-wrapper] > header h1,
 body > div[am-wrapper] > footer h1,
@@ -1297,11 +1297,11 @@ body > div[am-wrapper] > header h5,
 body > div[am-wrapper] > footer h5,
 body > div[am-wrapper] > header h6,
 body > div[am-wrapper] > footer h6 {
-  color: #ffb8a2;
+  color: #f96413;
 }
 body > div[am-wrapper] > header a,
 body > div[am-wrapper] > footer a {
-  color: #ffb8a2;
+  color: #f96413;
 }
 body > div[am-wrapper] > header a:hover,
 body > div[am-wrapper] > footer a:hover {
@@ -1558,15 +1558,16 @@ html {
 }
 body {
   background-color: #ffffff;
-  color: #424242;
+  color: #04474c;
   word-wrap: break-word;
   font-weight: 400;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body > header,
 body > footer {
-  background-color: #37474f;
-  color: #ffb8a2;
+  
+  background-color: #04474c;
+  color: #f96413;
 }
 body > header h1,
 body > footer h1,
@@ -1580,11 +1581,11 @@ body > header h5,
 body > footer h5,
 body > header h6,
 body > footer h6 {
-  color: #ffb8a2;
+  color: #f96413;
 }
 body > header a,
 body > footer a {
-  color: #ffb8a2;
+  color: #f96413;
 }
 body > header a:hover,
 body > footer a:hover {
@@ -1657,7 +1658,7 @@ a:active {
   color: #010000;
 }
 a:focus:not(.am-btn) {
-  background-color: #ff9f80;
+  background-color: #f96413;
   color: #801f00;
 }
 small {
@@ -1693,7 +1694,7 @@ pre {
   width: 100%;
   background-color: #f1f1f1;
   border-radius: 4px;
-  color: #333;
+  color: #04474c;
   display: block;
   font-size: 13px;
   line-height: 1.42857;
@@ -1778,13 +1779,13 @@ img {
           justify-content: center;
 }
 .am-active {
-  background-color: #ffb8a2;
+  background-color: #f96413;
 }
 .am-primary {
-  background-color: #ffb8a2;
+  background-color: #f96413;
 }
 .am-secondary {
-  background-color: #ffd1c3;
+  background-color: #f96413;
 }
 .am-clr-1-text {
   color: #f44336;

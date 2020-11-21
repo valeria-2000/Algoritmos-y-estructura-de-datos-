@@ -22,13 +22,13 @@ img {
 }
 
 .flexbottom {
-    border-bottom: 6px solid #009688;
+    border-bottom: 6px solid #04474c;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 }
 
 .flextop {
-    border-top: 5px solid #009688;
+    border-top: 5px solid #04474c;
     border-top-left-radius: 100px;
     border-top-right-radius: 100px;
     position: relative;
@@ -40,25 +40,25 @@ img {
     content: '';
     width: 1px;
     height: 250px;
-    background: #009688;
+    background: #04474c;
     position: absolute;
     right: 0;
 }
 
 .flexbottom {
-    box-shadow: inset 0px -20px 0px #03a999;
+    box-shadow: inset 0px -20px 0px #04474c;
 }
 
 .flex.flextop {
-    box-shadow: inset 0px 20px 0px #03a999;
+    box-shadow: inset 0px 20px 0px #04474c;
 }
 
 .stepNumber {
     width: 100%;
     text-align: center;
-    border: 1px solid orange;
+    border: 1px solid #f96413;
     border-radius: 50px 0px 50px 0px;
-    background: orange;
+    background: #f96413;
     color: white;
 }
 

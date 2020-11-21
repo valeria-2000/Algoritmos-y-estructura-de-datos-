@@ -12,7 +12,7 @@
     }
     
     .square:nth-child(2n) {
-    background-color: #FFFFFF;
+    background-color: #595959;
     box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2) inset;
     }
     
@@ -46,18 +46,18 @@
     position: absolute;
     top: 80px;
         line-height: 0;
-    border-color: transparent transparent transparent #C5DB54;
+    border-color: transparent transparent transparent  #595959;
     z-index: 999;
     left: 200px;
     }
     
     .square:nth-child(2n+1) .triagle {
-    border-color: transparent transparent transparent #73B55E;
+    border-color: transparent transparent transparent #04474c
     }
     
     .circle {
         background-color: #eed;
-        border: 15px solid #73B55E;
+        border: 15px solid #04474c;
         border-radius: 100px;
         height: 100px;
         width: 100px;
@@ -67,7 +67,7 @@
      }
     
      .square:nth-child(2n) .circle {
-     border: 15px solid #C5DB54;
+     border: 15px solid  #595959;
      top: 135px;
      }
     
