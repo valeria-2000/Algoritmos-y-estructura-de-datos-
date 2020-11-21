@@ -1,33 +1,33 @@
-from flask import Flask, request, make_response, redirect, render_template
+from flask import Flask, request, make_response, redirect, render_template, url_for
 
-# se crea un objeto del tipo app
-app =  Flask(__name__)
+#se crea un objeto de tipo app
+app = Flask(__name__)
+
 
 @app.route('/')
 def homeRoute():
-    user_ip = request.remote_addr
-    response = make_response(redirect('hello'))
-    response.set_cookie('ip',user_ip)
-    response.set_cookie('perro', 'aslan')
-    return response
-
-@app.errorhandler(404)
-def not_found(error):
-    return render_template('404.html')
+    return render_template("home.html")
 
 
-
-@app.route('/hello')
-def helloRoute():
-    perro = request.cookies.get('perro')
-    ip = request.cookies.get('ip')
-    return render_template('hello.html', mascota = perro, userIp = ip)
+@app.route("/doctors")
+def doctorsRoute():
+    return render_template("doctors.html")
 
 
-@app.route('/new')
-def newRoute():
-   
-    return render_template('new.html')
+@app.route("/services")
+def servicesRoute():
+    return render_template("services.html")
+
+
+@app.route("/contact")
+def contactRoute():
+    return render_template("contact.html")
+
+
+@app.route("/abaout")
+def abaoutRoute():
+    return render_template("abaout.html")
+
 
 if __name__ == '__main__':
     app.run()

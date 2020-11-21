@@ -1,0 +1,940 @@
+/* font-family */
+    /* latin-ext */
+    @font-face {
+        font-family: 'Courgette';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUk1WPoK7Es.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Courgette';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Courgette Regular'), local('Courgette-Regular'), url(https://fonts.gstatic.com/s/courgette/v7/wEO_EBrAnc9BLjLQAUk1VvoK.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Permanent Marker';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Permanent Marker Regular'), local('PermanentMarker-Regular'), url(https://fonts.gstatic.com/s/permanentmarker/v9/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cfw.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+  
+      /* cyrillic-ext */
+      @font-face {
+        font-family: 'Caveat';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v7/Wnz6HAc5bAfYB2Q7azYYmg8.woff2) format('woff2');
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: 'Caveat';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v7/Wnz6HAc5bAfYB2Q7YjYYmg8.woff2) format('woff2');
+        unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: 'Caveat';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v7/Wnz6HAc5bAfYB2Q7aDYYmg8.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: 'Caveat';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('Caveat Regular'), local('Caveat-Regular'), url(https://fonts.gstatic.com/s/caveat/v7/Wnz6HAc5bAfYB2Q7ZjYY.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+  
+      @font-face
+      {
+      font-family: 'Courgette', cursive;
+      font-family: 'Permanent Marker', cursive;
+      font-family: 'Caveat', cursive;
+      }
+  
+  
+  
+  /* Eléments principaux de la page */
+  
+      body /* définition de l'arrière plan + placement des différents éléments en arrière plan + définition des paramètres commun à toute la page (alignement du texte par exemple)  */
+      {
+          background-color: black;
+          margin: auto;
+          padding-left: 30px;
+          padding-right: 30px;   
+          font-family: 'Trebuchet MS', Arial, serif;
+          font-size: 0.8em;
+          color: white; 
+          font-weight: normal;  
+          text-align: center;  
+      }
+  
+      #block_page
+      {
+          display: grid;    
+      }
+  
+      article h1, aside h1 /* Définition apparence des titres h1 pour les articles et l'aside en commun */
+      {
+          font-family: 'Permanent Marker', Comic sans MS, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-size: 1.5em;
+      }
+  
+      article ul /* Suppression des points des liste ul pour les articles */
+      {
+        list-style-type: none;
+      }
+  
+      article h1 /* Définition des spécificités des titres h1 des articles */
+      {
+          color: lightgreen;
+          font-weight: bold;
+          font-style: normal;
+      }
+  
+      aside h1 /* Définition des spécificités des titres h1 de l'aside */
+      {
+          color: limegreen;
+      }
+  
+      article h2 /* Définition de l'apparence des titres h2 des articles */
+      {
+          font-family: 'Courgette', Courier New, Lucida Console, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-size: 1.25em;
+        /*  text-transform: uppercase; /* texte en majuscule (uppercase) inverse possible (lowercase->minucule)*/    
+          text-decoration: underline;    
+          font-style: normal;
+          color: lime;
+      }
+  
+      article h3 /* Définition de l'apparence des titres h3 des articles */
+      {
+          font-family: 'Caveat', Lucida Console, Courier New, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-size: 1.0em;
+          text-align: center;
+          text-decoration: underline;
+          font-weight: bold;
+          font-style: normal;
+          color: yellow;
+      }
+  
+      p, aside figcaption, article li /* Définition de l'apparence des textes des articles et de l'aside */
+      {
+          font-family: 'Comic Sans MS', 'Trebuchet MS', Arial, serif;
+          font-size: 0.8em;
+          color: springgreen;
+      }
+  
+      p, .description, #presentation, #a_propos_de_moi
+      {
+  
+          box-sizing: border-box;
+      }
+  
+      a /* Définition de l'apparence des liens de la page */
+      {
+          font-family: serif;
+          font-size : 0.9em ;         
+          color: aqua;
+          text-decoration: none;
+      }
+  
+     
+  
+  /* Header */
+  
+      header /* Définition des dimensions et de l'apparence de l'en-tête + disposition des blocs dans l'en-tête (display) + "overflow" en cas de dépacement des limites des blocs */
+      {
+          background: grey;
+          display: grid;
+          width: 35%; 
+          margin: auto;  
+          border: 15px black double;
+          border-radius: 0px 0px 50px 50px;  
+          box-shadow: 0px 0px 30px yellowgreen;
+          display: flex;
+          flex-direction: column; 
+          padding: 10px;  
+      }
+  
+      header img, aside img
+          {
+              width: 30%;
+              min-width: 75px;
+              
+          }
+  
+      header img 
+      {
+          border-radius: 50%;
+          margin: auto;
+          margin-right: 10px;
+          margin-left: 10px;
+          border: 8px black double;
+          box-shadow: 1px 1px 30px black;
+      }
+  
+      header h1
+      {
+          font-family:  'Courgette', Comic sans MS, Courier New, Lucida Console, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-size: 1.25em;
+          color: black;
+          text-decoration: underline;
+          margin: auto;
+          margin-left: 10px;
+          margin-right: 10px;
+          text-shadow: 15px 15px 5px #0083d9 inset;
+      }
+  
+  
+  /* Bannière Liens de navigation */
+  
+      nav
+      {
+          background: url('https://i.postimg.cc/t4zqfbZf/banniere-metal.jpg');
+          width: 90%;
+          margin: auto;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          border: 3px green solid;
+          box-shadow: 0px 0px 15px green;
+          border-radius: 50px 50px 50px 50px;
+          box-sizing: border-box;
+      }
+  
+      .conteneur-nav{
+          margin: auto;
+          box-sizing: border-box;
+          width: 100%;
+      }
+  
+      nav input[type=checkbox]{
+          display: none;
+      }
+  
+      nav label{
+          display: inline-block;
+          width: 90%;
+          margin: auto;
+          padding: 10px 0px;
+          text-align: center;
+          color: lime;
+          background-color: rgba(22,22,20,0.75);
+          border-radius: 20px; 
+          box-shadow: 2px 2px 5px #161616 inset;
+          box-sizing: border-box;
+          text-shadow: 5px 5px 10px olive;
+          font-family: 'Permanent Marker', Comic sans MS, Courier New, Lucida Console, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-weight: bold;
+          font-size: 1.0em;
+      }
+  
+      nav ul
+      {
+          list-style-type: none; /* permet de retirer l'image ronde de la puce */
+          display: none; /* chaque élément de la liste (li) est placé dans une flexbox et permet de les placé côte à côte */
+          margin: auto;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          box-sizing: border-box;
+      }
+  
+      nav input[type=checkbox]:checked + ul{
+          display: flex;
+          flex-flow : column wrap;
+      }
+  
+      nav ul li
+      {
+          flex: 1 1 auto;
+          text-align: center;
+          margin: auto; 
+          padding: 5px;
+          background-color: rgba(22,22,20,0.75);
+          border-radius: 20px; 
+          box-shadow: 2px 2px 5px #161616 inset;
+      }
+  
+      nav a
+      {
+          display: block;
+          text-decoration: none;
+          font-size: 0.7em;
+          font-family: 'Permanent Marker', Comic sans MS, Courier New, Lucida Console, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-weight: bold;    
+          color: gold;
+          text-decoration: none;
+          padding: 10px 0px;
+      }
+  
+      .sous{
+          display: flex;
+          flex-flow: column wrap;
+          z-index: 1000;
+      }
+  
+      .sous li{
+          flex: 1 1 auto;
+          text-align: left;
+      }
+  
+      .sous a{
+          padding: 10px;
+      }
+  
+      /* media queries */
+          @media screen and (min-width: 980px){
+              nav
+              {
+                  background: url('https://i.postimg.cc/t4zqfbZf/banniere-metal.jpg');
+                  width: 90%;
+                  margin: auto;
+                  margin-top: 50px;
+                  margin-bottom: 50px;
+                  border: 3px olive solid;
+                  box-shadow: 0px 0px 15px gold;
+                  border-radius: 50px 50px 50px 50px;
+              }
+  
+              .conteneur-nav{
+                  margin: auto;
+                  padding: 10px;
+              }
+              
+              nav label, nav input{
+                  display: none;
+              }
+              nav input[type=checkbox]:checked + ul, nav ul{
+                  display: flex;
+                  flex-flow: row wrap;
+              }
+  
+              nav ul li{
+                  position: relative;
+              }
+  
+  
+                nav ul
+              {
+                  list-style-type: none; /* permet de retirer l'image ronde de la puce */
+                  display: flex; /* chaque élément de la liste (li) est placé dans une flexbox et permet de les placé côte à côte */
+                  justify-content: space-around;
+                  margin: auto;
+                  margin-top: 10px;
+                  margin-bottom: 10px;
+              }
+  
+              nav li
+              {
+                  margin: auto; 
+                  padding: 5px;
+  
+                  background-color: rgba(22,22,20,0.75);
+                  border-radius: 20px; 
+                  box-shadow: 2px 2px 5px #161616 inset;
+              }
+  
+              nav ul li a
+              {
+                  font-size: 1.2em;
+                  font-family: 'Permanent Marker', Comic sans MS, Courier New, Lucida Console, Verdana, Georgia, Times New Roman, Arial, serif;
+                  font-weight: bold;    
+                  color: gold;
+                  text-decoration: none;
+              }
+  
+              nav ul li a:hover
+              {
+                  color: green;
+                  border-bottom: 3px solid green;
+                  border-radius: 20px;   
+                  text-shadow: 5px 5px 10px olive;
+  
+              }
+              nav:hover{        
+                  border: 3px lime solid;
+                  box-shadow: 0px 0px 15px limegreen;
+              }
+              
+              .sous{
+                  display: none;
+                  position: absolute;
+                  width: 100%;
+              }
+              nav > div > ul li:hover .sous{
+                  display: flex;
+                  flex-flow: column wrap;
+              }
+              .sous a{
+                  border-bottom: none;
+              }
+              .sous a:hover{
+                  border-bottom: none;
+              }
+              .deroulant > a::after{
+                  content:" ▼";
+                  font-size: 1.2em;
+              } 
+  
+          }
+  
+  /* Corps */
+  
+      section
+      {
+          width: 100%;
+          display: flex;
+          flex-flow: column wrap;
+          margin: auto;   
+          margin-top: 20px; 
+          margin-bottom: 20px; 
+          padding: 10px;    
+          background: url('https://i.postimg.cc/SskCmXQV/fond-noir-avec-un-dessin-geometrique-1048-1454.jpg');
+          box-shadow: 1px 1px 50px gold inset;
+          color: white;
+          border-left: 5px green solid;
+          border-right: 5px green solid;
+          border-radius: 50px 50px 50px 50px;
+          box-sizing: border-box;
+      }
+  
+      article
+      {
+          width: 95%;    
+          padding: 10px;
+          margin: auto;   
+          background: url('https://i.postimg.cc/SskCmXQV/fond-noir-avec-un-dessin-geometrique-1048-1454.jpg');
+          box-shadow: 1px 1px 30px lime inset;
+          border-top: 4px darkgreen solid;
+          border-bottom: 4px darkgreen solid;
+          border-radius: 50px / 100px ; 
+          background: rgba(192,192,192,0.25);
+          padding-bottom: 20px;
+          box-sizing: border-box;
+      }
+  
+      #a_propos_de_moi, #cv, #sites, #video_realise
+      {
+          background: url('https://i.postimg.cc/SskCmXQV/fond-noir-avec-un-dessin-geometrique-1048-1454.jpg');
+          margin: auto;
+          padding-right: 20px;
+          padding-left: 20px;
+      }
+  
+      #presentation
+      {
+          display: flex;
+          flex-direction: column;  
+          width: 95%;
+          padding: 10px;
+          margin: auto;   
+          margin-top: 5px;
+          margin-left: 10px; 
+          margin-right: 10px;
+      }
+  
+      .description
+      {    
+          width: 100%;
+          margin: auto;
+          margin-bottom: 20px;
+          padding: 10px;
+      }
+  
+      aside
+      {
+          width: 80%;
+          margin: auto;
+          background:  #050e29;
+          border-right: 4px olive solid;
+          border-left: 4px olive solid;
+          border-radius: 100px/50px;
+          padding-top: 30px;
+          padding-bottom: 50px;
+          box-shadow: 0px 0px 20px green;
+          box-sizing: border-box;
+      }
+  
+      #centres_interet
+      {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-around;
+          margin: auto; 
+          margin-left: 10px;
+          margin-right: 10px;
+          padding: 10px;
+          box-sizing: border-box;
+      }
+  
+      .p1, .p2, .p3, .p4
+      {
+          margin: auto;
+          margin-bottom: 10px;
+          box-sizing: border-box;
+          flex: 1;
+      }
+  
+      #cv
+      {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-around;  
+      }
+  
+      #experiences, #competences, #formations
+      {
+          width: 95%;
+          padding: 10px;
+          margin: auto;   
+          box-sizing: border-box; 
+      }
+  
+      #parcours_pro, .savoir, #diplomes
+      {
+          width: 100%;
+          margin: auto;
+          box-sizing: border-box;
+      }
+  
+      #mes_sites
+      {
+          display: flex;
+          flex-flow: column wrap;
+          justify-content: space-around;
+          margin: auto;
+          box-sizing: border-box;
+      }
+  
+      #video
+      {
+          
+          margin: auto;
+          box-sizing: border-box;
+      }
+  
+      #UnivCaen a, #UnivClermont a, #Clemessy a
+      {
+          
+          text-decoration: none;
+      }
+  
+      #Youtube a, #Twitch a
+      {
+          color: gold;
+          font-size : 0.9em ;
+          font-style: italic;      
+          font-weight: bold;  
+          border-bottom: 2px solid gold;
+          border-radius: 20px;
+      }    
+  
+      iframe
+      {
+          width: 90%;
+          min-height: 200px;
+          margin: auto;
+          box-sizing: border-box;
+      }
+  
+  
+  /* Pied de page */
+  
+      footer /* Dimensions du pied de page */
+      {
+          background: gray;
+          width: 80%;
+          margin: auto;
+          border: 10px black double;
+          border-radius: 50px 50px 0px 0px;   
+          box-shadow: 0px 0px 30px yellowgreen;
+      }
+  
+      footer p 
+      {
+          font-family: 'Courgette','Trebuchet MS', Arial, Courier New, Lucida Console, Verdana, Georgia, Times New Roman, serif;
+          color: black; 
+          font-weight: bold;
+          font-size: 0.8em;
+          margin: auto;
+          text-align: center;
+          box-sizing: border-box;
+      }
+  
+      footer a /* Modification apparence lien du mail */
+      {
+        color: navy;
+          font-style: italic;
+          font-weight: bold;
+          font-family: Times New Roman, serif;
+          font-size: 0.9em;
+          box-sizing: border-box;
+      }
+  
+      #me_contacter
+      {
+          width: 100%;
+          border-radius: 50px;
+          display: flex;
+          flex-flow: column wrap;
+          margin: auto; 
+          color: black;  
+          box-sizing: border-box;
+      }
+  
+      #me_contacter h1
+      {
+          font-family: 'Permanent Marker', Comic sans MS, Courier New, Lucida Console, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-size: 1.0em;
+          margin: auto;
+          font-weight: bold;
+          text-decoration: underline;
+          box-sizing: border-box;
+      }
+  
+      #contact /* flex pour aligner les box côte à côte */
+      {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          flex-flow: column wrap;
+          margin: auto;   
+          box-sizing: border-box;
+      }
+  
+      .coordonnees /* Placement des coordonnées sur le côté gauche du pied de page */
+      {
+          width: 90%;
+          flex: 1;      
+          margin: auto;
+          font-family: 'Courgette','Trebuchet MS', Arial, Courier New, Lucida Console, Verdana, Georgia, Times New Roman, serif;
+          font-size: 0.9em;
+          padding: 5px;
+          border: 1px;
+          color: black; 
+          font-weight: bold;
+          box-sizing: border-box;
+      }
+  
+      .adresse, .telephone, .mail
+      {
+          margin: auto;
+          box-sizing: border-box;
+          text-align: center;
+      }
+  
+      #linkedin /* Placement du logo et du texte LinkedIn sur le côté droit du pied de page */
+      {
+          width: 90%;
+          margin: auto;
+          box-sizing: border-box;
+      }
+  
+      #linkedin h2 /* Modification apparence du titre h2 */
+      {
+          font-family: 'Courgette', Comic sans MS, Courier New, Lucida Console, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-size: 1.2em;
+          margin: auto;
+          font-weight: bold;
+          text-decoration: underline;
+          box-sizing: border-box;
+      }
+  
+      #linkedin img  /* Centrage logo LinkedIn */
+      {
+          margin: auto;   
+      }
+  
+  
+  @media screen and (min-width: 980px){
+      section{
+  
+          width: 95%;
+          display: flex;
+          flex-flow: column wrap;
+          margin: auto;   
+          box-sizing: border-box;
+  
+      }
+  
+      article
+      {
+          width: 95%;   
+          margin: auto;   
+          box-sizing: border-box;
+      }
+  
+  
+    article h1, aside h1 /* Définition apparence des titres h1 pour les articles et l'aside en commun */
+      {
+          font-family: 'Permanent Marker', Comic sans MS, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-size: 2.5em;
+      }
+  
+      article ul /* Suppression des points des liste ul pour les articles */
+      {
+        list-style-type: none;
+      }
+  
+      article h1 /* Définition des spécificités des titres h1 des articles */
+      {
+          color: lightgreen;
+          font-weight: bold;
+          font-style: normal;
+      }
+  
+      aside h1 /* Définition des spécificités des titres h1 de l'aside */
+      {
+          color: limegreen;
+      }
+  
+      article h2 /* Définition de l'apparence des titres h2 des articles */
+      {
+          font-family: 'Courgette', Courier New, Lucida Console, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-size: 2.25em;
+        /*  text-transform: uppercase; /* texte en majuscule (uppercase) inverse possible (lowercase->minucule)*/    
+          text-decoration: underline;    
+          font-style: normal;
+          color: lime;
+      }
+  
+      article h3 /* Définition de l'apparence des titres h3 des articles */
+      {
+          font-family: 'Caveat', Lucida Console, Courier New, Verdana, Georgia, Times New Roman, Arial, serif;
+          font-size: 2.0em;
+          text-align: center;
+          text-decoration: underline;
+          font-weight: bold;
+          font-style: normal;
+          color: yellow;
+      }
+  
+      p, aside figcaption, article li /* Définition de l'apparence des textes des articles et de l'aside */
+      {
+          font-family: 'Comic Sans MS', 'Trebuchet MS', Arial, serif;
+          font-size: 1.5em;
+          color: springgreen;
+      }
+  
+      p, .description, #presentation, #a_propos_de_moi
+      {
+  
+          box-sizing: border-box;
+      }
+  
+      
+      a /* Définition de l'apparence des liens de la page */
+      {
+          font-family: serif;
+          font-size : 1.25em ;         
+          color: gold;
+          text-decoration: none;
+      }
+  
+      a:hover
+      {
+          color: limegreen;
+          font-style: italic;      
+          font-weight: bold;  
+          border-bottom: 2px solid limegreen;
+          border-radius: 20px;   
+      }
+     
+  
+      #centres_interet
+      {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          margin: auto; 
+          padding: 10px;
+          box-sizing: border-box;
+      }
+  
+      .p1, .p2, .p3, .p4
+      {
+          margin: auto;
+          margin-bottom: 10px;
+          box-sizing: border-box;
+          flex: 1;
+      }
+  
+      #cv
+      {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;  
+      }
+  
+      #experiences, #competences, #formations
+      {
+          width: 95%;
+          padding: 10px;
+          margin: auto;   
+          box-sizing: border-box; 
+      }
+  
+      #parcours_pro, .savoir, #diplomes
+      {
+          width: 100%;
+          margin: auto;
+          box-sizing: border-box;
+      }
+  
+      #mes_sites
+      {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-around;
+          margin: auto;
+          box-sizing: border-box;
+      }
+  
+      #video
+      {
+          
+          margin: auto;
+          box-sizing: border-box;
+      }
+  
+      
+  
+      #UnivCaen a, #UnivClermont a, #Clemessy a
+      {
+          
+          text-decoration: none;
+      }
+  
+      #Youtube a, #Twitch a
+      {
+          color: gold;
+          font-size : 1.25em ;
+          text-decoration: none;
+      }
+  
+      #UnivCaen a:hover, #UnivClermont a:hover, #Clemessy a:hover
+      {
+          border-bottom: 2px solid lime;
+          border-radius: 20px; 
+      }
+  
+      #Youtube a:hover, #Twitch a:hover
+      {
+          color: lime;
+          font-style: italic;      
+          font-weight: bold;  
+          border-bottom: 2px solid lime;
+          border-radius: 20px;  
+      }
+  
+  
+      iframe
+      {
+          width: 90%;
+          max-width: 560px;
+          min-height: 315px;
+          margin: auto;
+          box-sizing: border-box;
+      }
+  
+  
+      /* Pied de page */
+  
+      
+  
+          footer p 
+          {
+              font-size: 1.25em;
+              margin: auto;
+              text-align: center;
+              box-sizing: border-box;
+          }
+  
+          footer a /* Modification apparence lien du mail */
+          {
+              font-size: 1.5em;
+              box-sizing: border-box;
+          }
+  
+          footer a:hover{
+              color: darkgreen;
+              font-style: italic;      
+              font-weight: bold;  
+              border-bottom: 2px solid darkgreen;
+              border-radius: 20px;  
+          }
+  
+          #me_contacter
+          {
+              width: 100%;
+              display: flex;
+              flex-flow: row wrap;
+              justify-content: space-around;
+              margin: auto; 
+          }
+  
+          #me_contacter h1
+          {
+              font-size: 2.0em;
+              margin: auto;
+              box-sizing: border-box;
+          }
+  
+          #contact /* flex pour aligner les box côte à côte */
+          {
+              width: 100%;
+              display: flex;
+              justify-content: space-around;
+              flex-flow: row wrap;
+              margin: auto;   
+              box-sizing: border-box;
+          }
+  
+          .coordonnees /* Placement des coordonnées sur le côté gauche du pied de page */
+          {
+              width: 90%;         
+              margin: auto;
+              font-size: 1.25em;
+              box-sizing: border-box;
+          }
+  
+          
+  
+          #linkedin /* Placement du logo et du texte LinkedIn sur le côté droit du pied de page */
+          {
+              width: 90%;
+              margin: auto;
+              box-sizing: border-box;
+          }
+  
+          #linkedin h2 /* Modification apparence du titre h2 */
+          {
+              font-size: 1.5em;
+              margin: auto;
+          }
+  
+    
+  
+  }
+  
+  
+  

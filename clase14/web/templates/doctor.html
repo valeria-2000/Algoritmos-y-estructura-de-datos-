@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/doctores.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <h1><a href="#"><span class="color">l</span>ogo</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><span class="color">Home</span></a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li><a href="#services">services</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="showcase">
+            <h1>CLINICA MEDELLÍN</h1>
+            <p>Aquel que tenga salud tiene esperanza; y aquel con esperanza lo tiene todo</p>
+            <a href="https://www.dancefree.com.co/diario/hospitales-clinicas-y-centros-de-salud-en-medellin?locale=es"
+                target="_blank">Click Me</a>
+        </section>
+
+        <section id="para1">
+            <h2>Importancia de las centrso de salud </h2>
+            <p>Contar con un centro de salud con profesionales especializados y con experiencia conlleva una seguridad y
+                comodidad necesarias cuando nos encontramos ante algún problema de salud o alguna emergencia.
+
+                Estos centros ofrecen servicios de atención primaria, que consisten en una asistencia sanitaria básica
+                orientada a la reacción ante emergencias o a la oferta de servicios sanitarios básicos, como pueden ser
+                los servicios de enfermería. </p>
+        </section>
+        <section id="pic">
+            <img src="{{url_for ('static', filename = 'imagenes/cli.jpg')}}" class="portfolio-img" alt="places photos">
+
+        </section>
+        <div class="clear"></div>
+        <hr>
+
+        <!-------third section ------>
+        <div id="about">
+            <h2>Especialidades</h2>
+            <section id="pic">
+
+                <img src="{{url_for ('static', filename = 'imagenes/11.jpg')}}" class="portfolio-img" alt=" photos">
+                <h3>
+                    DR.ALEJANDRO GAVIRIA VELÁSQUEZ</h3>
+                <p>Especialista en Cirugía General</p>
+   
+
+                <h3>DR.ANDRÉS GÓMEZ HOYOS</h3>
+                <p>Especialista en Neurocirugía</p>
+    
+                <h3>DR.CAMILO ANDRÉS ARANGO PEÑA</h3>
+                <p>Especialista Cirugía Maxilofacial</p>
+     
+
+               
+                <h3>DR.DANIEL ANDRÉS SANTA BOTERO</h3>
+                <p> Especialista Hematología, Oncología</p>
+       
+                
+                <h3>DR.JUAN LUIS JARAMILLO VALENCIA</h3>
+                <p>Especialista Urología</p>
+        </div>
+
+
+        <hr>
+
+
+        <div class="wrapper">
+            <h2>Google Maps</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d843.3113232470316!2d44.81417373907796!3d41.729017747704205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ska!2sge!4v1502820571644"
+                width="960" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <hr>
+        <h2>Contact</h2>
+        <section id="contact">
+            <div class="wrapper">
+                <form id="myform">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" class="submit"><br>
+                    <label for="name">Password</label><br>
+                    <input type="text" name="pass" class="submit"><br>
+                    <label for="name">Email</label><br>
+                    <input type="text" name="email" class="submit"><br>
+                    <label for="">Comment</label><br>
+                    <textarea rows="6" cols="30"></textarea><br>
+                    <input type="submit" id="btn" value="get started">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <p>Leslly Valeria Blandon Delgado<br><a href = "/">regresar al home </a> &copy;</p>
+            </div>
+        </footer>
+
+        </div>
+</body>
+
+</html>
