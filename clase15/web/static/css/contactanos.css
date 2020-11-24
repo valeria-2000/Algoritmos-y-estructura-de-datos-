@@ -1,0 +1,92 @@
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 100px;
+    }
+    
+    .square {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: left;
+    }
+    
+    .square:nth-child(2n) {
+    background-color: #595959;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.2) inset;
+    }
+    
+    .square:nth-child(2n+1) {
+    background-color:#04474c;
+    box-shadow: 5px 0px 5px rgba(0, 0, 0, 0.1) inset;
+    }
+    
+    .square:first-child {
+    box-shadow: none;
+    }
+    
+    .square p.text {
+        font: 400 14px/18px Verdana;
+        padding: 0 20px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    
+    .square:nth-child(2n+1) p.text {
+    color: #F2F2F2;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .triagle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 20px;
+    position: absolute;
+    top: 80px;
+        line-height: 0;
+    border-color: transparent transparent transparent  #595959;
+    z-index: 999;
+    left: 200px;
+    }
+    
+    .square:nth-child(2n+1) .triagle {
+    border-color: transparent transparent transparent #04474c
+    }
+    
+    .circle {
+        background-color: #eed;
+        border: 15px solid #04474c;
+        border-radius: 100px;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: -65px;
+        left: 35px;
+     }
+    
+     .square:nth-child(2n) .circle {
+     border: 15px solid  #595959;
+     top: 135px;
+     }
+    
+     .circle p {
+        bottom: -50px;
+        font-size: 50px;
+        position: absolute;
+        display: block;
+        border: 5px solid #FCFCFA;
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        padding: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2) inset;
+     }
+     .img {
+        border-radius: 50px;
+        height: 50px;
+        width: 50px;
+        padding: 20px;
+
+     }

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor</title>
+    <link rel="stylesheet" href="{{url_for ('static', filename = 'css/paciente.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="wrapper">
+                <div class="logo">
+                    <h1><a href="#"><span class="color">C</span>línica</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#"><span class="color">Home</span></a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <li><a href="#services">services</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="showcase">
+            <h1>CLINICA MEDELLÍN</h1>
+            <p>Aquel que tenga salud tiene esperanza; y aquel con esperanza lo tiene todo</p>
+            <a href="https://www.dancefree.com.co/diario/hospitales-clinicas-y-centros-de-salud-en-medellin?locale=es"
+                target="_blank">Click Me</a>
+        </section>
+
+        
+        </section>
+        <section id="pic">
+            <img src="{{url_for ('static', filename = 'imagenes/1.jpg')}}" class="portfolio-img" alt="places photos">
+
+        </section>
+        <div class="clear"></div>
+        <hr>
+
+        <!-------third section ------>
+        <div id="about">
+            <h2>Lista de pacientes internados</h2>
+            <section id="pic">
+
+                <img src="{{url_for ('static', filename = 'imagenes/4.jpg')}}" class="portfolio-img" alt=" photos">
+                <h3>
+                    01.</h3>
+                <p>ADRIANA CAROLINA
+                    HERNANDEZ MONTERROZA</p>
+   
+
+                <h3>02.</h3>
+                <p>ALEXANDER
+                    CARVAJAL VARGAS</p>
+    
+                <h3>03.</h3>
+                <p>ANGELA PATRICIA
+                    MAHECHA PIÑEROS</p>
+     
+
+               
+                <h3>04.</h3>
+                <p>CAMILO
+                    VILLAMIZAR ARISTIZABAL</p>
+       
+                
+                <h3>05.</h3>
+                <p>CAROL RUCHINA
+                    GOMEZ GIANINE</p>
+
+                <h3>06.</h3>
+                <p>CINTHYA FERNANDA
+                    DUSSÁN GUZMÁN</p>
+
+                <h3>07.</h3>
+                <p>DANIEL
+                    GÓMEZ DELGADO</p>
+                
+                <h3>08.</h3>
+                <p>CRISTINA ELIZABETH
+                    BARTHEL GUARDIOLA</p>
+
+                <h3>09.</h3>
+                <p>CAROL RUCHINA
+                    GOMEZ GIANINE</p>
+                    
+                <h3>10.</h3></h3>
+                <p>DANIELA
+                    GUZMÁN</p>
+
+                <h3>11.</h3>
+                <p>DANIELA KATHERINNE
+                    SUARIQUE ÁVILA</p>
+
+                <h3>12.</h3>
+                <p>DIANA CAROLINA
+                    LOPEZ RODRIGUEZ</p>
+
+                <h3>13.</h3>
+                <p>DIEGO ALEJANDRO
+                    FORERO PEÑA</p>
+
+                <h3>14.</h3>
+                <p>ESTEWIL CARLOS
+                    QUESADA CALDERÍN</p>
+                
+                <h3>15.</h3>
+                <p>FABIAN ANDRES
+                    FINO ANDRADE</p>
+
+                <h3>16.</h3>
+                <p>GABRIEL FELIPE
+                    HERRERA MORENO</p>
+
+                <h3>17.</h3>
+                <p>GLORIA PATRICIA
+                    MENDOZA ALVEAR</p>
+
+                <h3>18.</h3>
+                <p>HUGO ANDRÉS
+                    CAMARGO VARGAS</p>
+
+
+                <h3>19.</h3>
+                <p>IVÁN DAVID
+                    CORAL BURBANO</p>
+
+                <h3>20.</h3>
+                <p>JENNY FERNANDA
+                    SÁNCHEZ ARENAS</p>
+
+                <h3>21.</h3>
+                <p>JORGE MARIO
+                    OROZCO DUSSÁN</p>
+
+                <h3>22.</h3>
+                <p>JUAN CAMILO
+                    ORTEGA PEÑA</p>
+
+
+                <h3>23.</h3>
+                <p>JUAN SEBASTIAN
+                    TARQUINO ACOSTA</p>
+
+                <h3>24.</h3>
+                <p>JULIANA
+                    GAVIRIA GARCIA</p>
+
+                <h3>25.</h3>
+                <p>LAURA CAMILA
+                    PUERTO CASTRO</p>
+
+                
+        </div>
+
+
+        <hr>
+
+
+        <div class="wrapper">
+            <h2>Google Maps</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d843.3113232470316!2d44.81417373907796!3d41.729017747704205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ska!2sge!4v1502820571644"
+                width="960" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <hr>
+        <h2>Contact</h2>
+        <section id="contact">
+            <div class="wrapper">
+                <form id="myform">
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" class="submit"><br>
+                    <label for="name">Password</label><br>
+                    <input type="text" name="pass" class="submit"><br>
+                    <label for="name">Email</label><br>
+                    <input type="text" name="email" class="submit"><br>
+                    <label for="">Comment</label><br>
+                    <textarea rows="6" cols="30"></textarea><br>
+                    <input type="submit" id="btn" value="get started">
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <p>Leslly Valeria Blandon Delgado<br><a href = "/">regresar al home </a> &copy;</p>
+            </div>
+        </footer>
+
+        </div>
+</body>
+
+</html>
