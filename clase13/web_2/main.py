@@ -57,11 +57,11 @@ def login():
 
 @app.route('/places')
 def helloRoute():
-    return redirect(url_for('places.html'))
+    return render_template('places.html')
 
-@app.route('/personage')
-def newRoute():
-    return redirect(url_for('personage.html'))
+@app.route('/personajes')
+def personajeRoute():
+    return render_template('personajes.html')
 
 
 if __name__ == '__main__':
